@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @consumer.token %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @consumer.event_action %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @consumer.event_description %>
+</p>
+
+<p>
+  <strong>Scope:</strong>
+  <%= @consumer.event_scope %>
+</p>
+
+<%= link_to 'Edit', edit_consumer_path(@consumer) %> |
+<%= link_to 'View all events', consumers_path(token: @consumer.token) %>
+
